@@ -2,6 +2,7 @@
   <div class='col-md-5'>
     <!-- INSERT COMIC COVER IMAGE HERE WITH ERB.
          ATTACH THE CLASS of 'img-responsive' TO THIS LINK -->
+    <%= image_tag @comic.image_url, :class => 'img-responsive' %>
   </div>
   <div class='col-md-7'>
     <h1><!-- INSERT COMIC BOOK TITLE HERE WITH ERB --></h1>

@@ -1,4 +1,18 @@
 Comicbin::Application.routes.draw do
+
+root "comics#index"
+
+get "/comics" => 'comics#index'
+get "/comics/new" => 'comics#new'
+get "/comics/create" => 'comics#create'
+
+get "/comics/:comic_id" => 'comics#show'
+
+
+#get "/comics/delete" => 'comics#toast'
+#get "/comics/create" => 'comics#create'
+
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +67,4 @@ Comicbin::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
