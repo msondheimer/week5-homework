@@ -12,10 +12,9 @@ def show
     @comic = Comic.find_by :id => the_comic_id
     render 'show'
  end
-
+ 
  def new
-
- end
+ end 
 
  def create
     c = Comic.new
