@@ -5,8 +5,8 @@ root "comics#index"
 get "/comics" => 'comics#index'
 get "/comics/new" => 'comics#new'
 get "/comics/create" => 'comics#create'
-
-get "/comics/:comic_id" => 'comics#show'
+get "/comics/delete/:id" => 'comics#toast'
+get "/comics/show/:id" => 'comics#show'
 
 
 #get "/comics/delete" => 'comics#toast'
